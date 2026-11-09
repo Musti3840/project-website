@@ -1,12 +1,21 @@
+@font-face {
+    font-family: "Black Ops One";
+    src: url("BlackOpsOne-Regular.ttf");
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e6e6e6;
-    color: #333333;
+    font-family: "Black Ops One", Arial, sans-serif;
+    background-color: #f5ecd9;
+    color: #444444;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background-color: #444444;
+    background-color: #666666;
+    text-align: center;
     padding: 15px;
 }
 
@@ -17,23 +26,37 @@ header h2 {
 
 nav a {
     color: white;
-    margin-right: 15px;
+    padding: 5px 10px;
+    margin: 0 5px;
     text-decoration: none;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #f5ecd9;
+    color: #444444;
 }
 
 main {
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
 }
 
-h1, h2 {
-    color: #222222;
+h1 {
+    color: #444444;
+    font-weight: normal;
+}
+
+h2 {
+    color: #666666;
+    font-weight: normal;
+}
+
+a {
+    color: #444444;
 }
 
 img {
@@ -50,13 +73,13 @@ table {
 }
 
 th, td {
-    border: 1px solid #999999;
+    border: 1px solid #cccccc;
     padding: 8px;
     text-align: left;
 }
 
 th {
-    background-color: #cccccc;
+    background-color: white;
 }
 
 label {
@@ -68,18 +91,20 @@ input, select, textarea {
     width: 100%;
     padding: 6px;
     box-sizing: border-box;
+    border: 1px solid #cccccc;
 }
 
 button {
     margin-top: 15px;
     padding: 8px 16px;
-    background-color: #555555;
-    color: white;
+    background-color: #ffffff;
+    color: #444444;
     border: none;
 }
 
 button:hover {
-    background-color: #222222;
+    background-color: #666666;
+    color: white;
 }
 
 article {
@@ -87,15 +112,50 @@ article {
     width: 30%;
     vertical-align: top;
     margin-right: 2%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+
+.antwoord {
+    font-family: Arial, sans-serif;
 }
 
 footer {
-    background-color: #444444;
+    background-color: #666666;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 footer a {
     color: white;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+p {
+    text-align: center;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+
+a {
+    text-align: center;
+}
+
+.iframe{
+    
 }
